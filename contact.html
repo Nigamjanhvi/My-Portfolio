@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – Janhvi Nigam</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top jn-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><span class="brand-bracket">&lt;</span>Janhvi<span class="brand-dot">.</span>dev<span class="brand-bracket">/&gt;</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <i class="fas fa-bars" style="color:#64ffda"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto align-items-center gap-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-2"><a href="#contactForm" class="btn btn-jn">Hire Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <p class="eyebrow">LET'S CONNECT</p>
+    <h1 class="page-header-title">Contact Me</h1>
+    <p class="page-header-sub">// I'm currently open to internship and collaboration opportunities</p>
+  </div>
+</div>
+
+<!-- CONTACT MAIN -->
+<section class="py-5 section-dark2" id="contactForm">
+  <div class="container">
+    <div class="row g-5">
+
+      <!-- LEFT: Info -->
+      <div class="col-md-5 fade-up">
+        <p class="eyebrow mb-2">GET IN TOUCH</p>
+        <h2 class="section-title mb-3">Say <span>Hello</span> 👋</h2>
+        <p style="color:var(--text-dim);line-height:1.8;margin-bottom:30px">
+          Whether you want to discuss a project, offer an internship, collaborate on something cool, or just want to connect — my inbox is always open!
+        </p>
+
+        <!-- Contact Info Cards -->
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-val"><a href="mailto:janhvinigam15@gmail.com">janhvinigam15@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+          <div>
+            <div class="contact-info-label">Phone</div>
+            <div class="contact-info-val"><a href="tel:+917587568710">+91-7587568710</a></div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fab fa-linkedin-in"></i></div>
+          <div>
+            <div class="contact-info-label">LinkedIn</div>
+            <div class="contact-info-val"><a href="https://www.linkedin.com/in/janhvi-nigam15" target="_blank">linkedin.com/in/janhvi-nigam15</a></div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fab fa-github"></i></div>
+          <div>
+            <div class="contact-info-label">GitHub</div>
+            <div class="contact-info-val"><a href="https://github.com/Nigamjanhvi" target="_blank">github.com/Nigamjanhvi</a></div>
+          </div>
+        </div>
+
+        <div class="contact-info-card">
+          <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <div class="contact-info-label">Location</div>
+            <div class="contact-info-val">Phagwara, Punjab, India</div>
+          </div>
+        </div>
+
+        <!-- Open to work badge -->
+        <div style="margin-top:24px;background:rgba(100,255,218,0.06);border:1px solid rgba(100,255,218,0.2);border-radius:12px;padding:18px 20px;">
+          <div style="display:flex;align-items:center;gap:10px">
+            <div style="width:10px;height:10px;border-radius:50%;background:var(--accent);animation:pulse-dot 1.5s ease-in-out infinite"></div>
+            <span style="font-family:var(--font-mono);font-size:0.82rem;color:var(--accent)">Open to Internship Opportunities</span>
+          </div>
+          <p style="color:var(--text-dim);font-size:0.82rem;margin-top:8px;margin-bottom:0">Available for remote and on-site roles in Web Dev, Cloud, and DevOps domains.</p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="col-md-7 fade-up">
+        <div class="contact-form-wrap">
+          <p class="eyebrow mb-3">SEND A MESSAGE</p>
+          <form class="jn-form" onsubmit="handleContactForm(event)">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label>Your Name</label>
+                <input type="text" class="form-control" placeholder="John Doe" required/>
+              </div>
+              <div class="col-md-6">
+                <label>Email Address</label>
+                <input type="email" class="form-control" placeholder="you@example.com" required/>
+              </div>
+              <div class="col-12">
+                <label>Subject</label>
+                <select class="form-select">
+                  <option value="">Select a subject</option>
+                  <option>Internship Opportunity</option>
+                  <option>Freelance Project</option>
+                  <option>Collaboration</option>
+                  <option>General Question</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label>Message</label>
+                <textarea class="form-control" rows="6" placeholder="Hi Janhvi, I'd love to connect about..." required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn-jn-full">
+                  <i class="fas fa-paper-plane me-2"></i>Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AVAILABILITY -->
+<section class="py-5 section-dark">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-10">
+        <div class="text-center mb-5 fade-up">
+          <p class="eyebrow">WHAT I'M LOOKING FOR</p>
+          <h2 class="section-title">Currently Available For</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 fade-up">
+            <div class="achievement-card text-center">
+              <span class="achievement-icon">💼</span>
+              <h6>Internships</h6>
+              <p>Looking for internship opportunities in Web Development, Cloud Engineering, or DevOps roles.</p>
+            </div>
+          </div>
+          <div class="col-md-4 fade-up">
+            <div class="achievement-card text-center">
+              <span class="achievement-icon">🤝</span>
+              <h6>Collaborations</h6>
+              <p>Open to collaborating on open-source projects, hackathons, and student-led tech initiatives.</p>
+            </div>
+          </div>
+          <div class="col-md-4 fade-up">
+            <div class="achievement-card text-center">
+              <span class="achievement-icon">🚀</span>
+              <h6>Freelance Projects</h6>
+              <p>Available for small to medium web development or cloud deployment freelance gigs.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SUCCESS TOAST -->
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index:9999">
+  <div id="msgToast" class="toast align-items-center text-white border-0" role="alert" style="background:var(--bg-card);border:1px solid var(--accent) !important">
+    <div class="d-flex">
+      <div class="toast-body" style="font-family:var(--font-mono);font-size:0.85rem;color:var(--accent)">
+        ✅ Message sent! I'll get back to you soon.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="jn-footer">
+  <div class="container text-center">
+    <p class="footer-brand">&lt;Janhvi.dev/&gt;</p>
+    <div class="footer-socials">
+      <a href="https://www.linkedin.com/in/janhvi-nigam15" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Nigamjanhvi" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:janhvinigam15@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p class="footer-copy">© 2025 Janhvi Nigam. Designed & Built with ❤️</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+<script>
+  function handleContactForm(e) {
+    e.preventDefault();
+    const toast = new bootstrap.Toast(document.getElementById('msgToast'), { delay: 3000 });
+    toast.show();
+    e.target.reset();
+  }
+</script>
+
+<style>
+  @keyframes pulse-dot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(1.3); }
+  }
+</style>
+</body>
+</html>
